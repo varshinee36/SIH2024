@@ -1,0 +1,170 @@
+[
+    {
+        "question": "Imagine a village where farmers are unable to get fair prices for their crops due to exploitation by middlemen. What constitutional principle can be used to ensure fair wages and prices?",
+        "options": ["Social Justice", "Right to Work", "Equal Distribution of Wealth", "Public Health"],
+        "answer": "Social Justice",
+        "explanation": "The principle of social justice ensures that the government takes steps to prevent exploitation and provide fair wages and prices for agricultural produce."
+    },
+    {
+        "question": "A city faces a severe water crisis because industries are polluting rivers and depleting groundwater. Which constitutional principle would guide the government to protect natural resources and maintain environmental sustainability?",
+        "options": ["Public Health", "Social Justice", "Environmental Protection", "Economic Growth"],
+        "answer": "Environmental Protection",
+        "explanation": "The principle of environmental protection directs the government to take measures to conserve natural resources and maintain ecological balance."
+    },
+    {
+        "question": "A locality is struggling with high crime rates and inadequate policing. Which constitutional principle can be invoked to ensure public order and safety?",
+        "options": ["Social Justice", "Public Health", "Public Order", "Right to Privacy"],
+        "answer": "Public Order",
+        "explanation": "The principle of public order emphasizes the government's responsibility to maintain law and order, ensuring safety and security for all citizens."
+    },
+    {
+        "question": "Consider a scenario where a government is unable to provide timely pensions to senior citizens. Which constitutional principle addresses the need for social security and economic welfare?",
+        "options": ["Social Justice", "Economic Development", "Public Health", "Environmental Protection"],
+        "answer": "Social Justice",
+        "explanation": "The principle of social justice ensures that the government provides economic security and welfare, including pensions for senior citizens."
+    },
+    {
+        "question": "In a densely populated urban area, the inadequate public transport system is causing severe traffic congestion and pollution. Which constitutional principle directs the government to provide basic services and infrastructure?",
+        "options": ["Economic Development", "Social Justice", "Public Health", "Environmental Protection"],
+        "answer": "Social Justice",
+        "explanation": "The principle of social justice emphasizes the need for the government to provide adequate infrastructure, including public transport systems, to improve living conditions and reduce pollution."
+    },
+    {
+        "question": "A community living in slums lacks access to clean water and sanitation facilities. Which constitutional principle should the government prioritize to improve their living conditions?",
+        "options": ["Social Justice", "Economic Development", "Environmental Protection", "Public Health"],
+        "answer": "Social Justice",
+        "explanation": "Social justice calls for steps to uplift marginalized communities and ensure they have access to basic necessities like clean water and sanitation."
+    },
+    {
+        "question": "Suppose a region is facing severe unemployment and poverty due to industrial decline. Which constitutional principle can the government use to address the economic well-being of the people?",
+        "options": ["Social Justice", "Economic Development", "Environmental Protection", "Public Health"],
+        "answer": "Economic Development",
+        "explanation": "Economic development is key to creating jobs and improving living standards, which directly impacts the well-being of individuals in the community."
+    },
+    {
+        "question": "Imagine a city where there is a high incidence of respiratory diseases due to industrial pollution. Which constitutional principle would guide the government to maintain a clean and healthy environment?",
+        "options": ["Social Justice", "Environmental Protection", "Public Health", "Economic Growth"],
+        "answer": "Environmental Protection",
+        "explanation": "The principle of environmental protection aims to safeguard the environment and reduce pollution, which is essential for public health and well-being."
+    },
+    {
+        "question": "In a region facing frequent natural disasters like floods and earthquakes, which constitutional principle ensures that the government takes preventive and remedial measures?",
+        "options": ["Social Justice", "Environmental Protection", "Public Safety", "Economic Development"],
+        "answer": "Environmental Protection",
+        "explanation": "Environmental protection requires the government to implement measures that prevent and manage natural disasters, ensuring public safety and sustainability."
+    },
+    {
+        "question": "Consider a scenario where a neighborhood lacks access to quality education due to economic constraints. Which constitutional principle ensures that everyone has the right to education?",
+        "options": ["Social Justice", "Economic Development", "Public Health", "Environmental Protection"],
+        "answer": "Social Justice",
+        "explanation": "Social justice is about providing equal opportunities and ensuring access to quality education for all, regardless of economic status."
+    },
+    {
+        "question": "A town is dealing with a high level of unemployment and poverty due to the closure of local factories. Which constitutional principle should guide the government to create job opportunities and uplift the community?",
+        "options": ["Economic Development", "Public Health", "Social Justice", "Environmental Protection"],
+        "answer": "Economic Development",
+        "explanation": "Economic development focuses on job creation and economic growth, which are essential for reducing unemployment and poverty."
+    },
+    {
+        "question": "Imagine a situation where an area lacks basic health services such as hospitals and clinics. Which constitutional principle aims to provide basic healthcare services to all citizens?",
+        "options": ["Public Health", "Social Justice", "Economic Development", "Environmental Protection"],
+        "answer": "Public Health",
+        "explanation": "The principle of public health ensures that all citizens have access to essential healthcare services."
+    },
+    {
+        "question": "A neighborhood is experiencing frequent electricity outages, affecting daily life and businesses. Which constitutional principle guides the government to ensure basic utilities and services?",
+        "options": ["Economic Development", "Social Justice", "Public Health", "Environmental Protection"],
+        "answer": "Social Justice",
+        "explanation": "Social justice emphasizes the need for basic infrastructure and utilities to improve quality of life for all residents."
+    },
+    {
+        "question": "A rural area is facing challenges due to lack of educational institutions and skilled teachers. Which constitutional principle should the government focus on to provide quality education?",
+        "options": ["Social Justice", "Public Health", "Economic Development", "Environmental Protection"],
+        "answer": "Social Justice",
+        "explanation": "Social justice aims to ensure equal access to quality education for all, regardless of geographical location or socioeconomic status."
+    },
+    {
+        "question": "Consider a scenario where a community is exposed to toxic chemicals due to industrial waste. Which constitutional principle addresses environmental protection and public safety?",
+        "options": ["Environmental Protection", "Public Health", "Social Justice", "Economic Development"],
+        "answer": "Environmental Protection",
+        "explanation": "Environmental protection requires the government to manage and reduce pollution, safeguarding public health and the environment."
+    },
+    {
+        "question": "A city has a significant migrant population struggling to integrate into society. Which constitutional principle can be used to ensure equal rights and opportunities for these individuals?",
+        "options": ["Social Justice", "Public Health", "Economic Development", "Environmental Protection"],
+        "answer": "Social Justice",
+        "explanation": "Social justice seeks to provide equal opportunities and rights for all individuals, including migrants."
+    },
+    {
+        "question": "A region is grappling with overcrowded prisons due to an inefficient criminal justice system. Which constitutional principle would help in reforming the system to ensure justice and fairness?",
+        "options": ["Social Justice", "Public Health", "Environmental Protection", "Economic Development"],
+        "answer": "Social Justice",
+        "explanation": "The principle of social justice aims for a fair and efficient justice system that addresses the root causes of crime and ensures rehabilitation."
+    },
+    {
+        "question": "A coastal area is at risk of losing its land due to rising sea levels and erosion. Which constitutional principle should the government prioritize to protect the region?",
+        "options": ["Environmental Protection", "Public Health", "Economic Development", "Social Justice"],
+        "answer": "Environmental Protection",
+        "explanation": "Environmental protection requires the government to take steps to mitigate and adapt to climate change, ensuring the sustainability of natural resources."
+    },
+    {
+        "question": "A city is dealing with high levels of air pollution from vehicle emissions. Which constitutional principle can be used to enforce stricter environmental standards?",
+        "options": ["Environmental Protection", "Social Justice", "Public Health", "Economic Development"],
+        "answer": "Environmental Protection",
+        "explanation": "The principle of environmental protection focuses on reducing pollution and safeguarding public health."
+    },
+    {
+        "question": "A remote tribal community lacks access to clean drinking water. Which constitutional principle ensures that marginalized communities receive adequate resources?",
+        "options": ["Social Justice", "Public Health", "Economic Development", "Environmental Protection"],
+        "answer": "Social Justice",
+        "explanation": "Social justice emphasizes the need for equitable distribution of resources and services, including clean water, for marginalized communities."
+    },
+    {
+        "question": "An urban area faces challenges with mental health issues due to high stress and isolation. Which constitutional principle directs the government to improve mental health services?",
+        "options": ["Public Health", "Social Justice", "Environmental Protection", "Economic Development"],
+        "answer": "Public Health",
+        "explanation": "The principle of public health includes mental health as a fundamental aspect of well-being and requires the government to provide adequate services."
+    },
+    {
+        "question": "A rural area lacks access to internet connectivity, limiting educational and job opportunities. Which constitutional principle is most relevant to ensure digital inclusion?",
+        "options": ["Social Justice", "Economic Development", "Environmental Protection", "Public Health"],
+        "answer": "Social Justice",
+        "explanation": "Social justice aims to provide equal access to technology and information, crucial for education and economic opportunities."
+    },
+    {
+        "question": "A community suffers from chronic water shortages, impacting agriculture and daily life. Which constitutional principle guides the government to manage water resources effectively?",
+        "options": ["Environmental Protection", "Public Health", "Social Justice", "Economic Development"],
+        "answer": "Environmental Protection",
+        "explanation": "Environmental protection ensures sustainable management of natural resources, including water, for current and future generations."
+    },
+    {
+        "question": "Consider a situation where an area is facing high crime rates due to lack of employment opportunities. Which constitutional principle could the government use to address both social justice and economic development?",
+        "options": ["Social Justice", "Economic Development", "Public Health", "Environmental Protection"],
+        "answer": "Economic Development",
+        "explanation": "Economic development seeks to create jobs and economic opportunities, which can help reduce crime rates and improve social well-being."
+    },
+    {
+        "question": "An area is struggling with frequent power outages affecting economic activities and quality of life. Which constitutional principle ensures that the government provides reliable energy services?",
+        "options": ["Economic Development", "Social Justice", "Environmental Protection", "Public Health"],
+        "answer": "Social Justice",
+        "explanation": "Social justice emphasizes the importance of ensuring essential services, including electricity, for all communities."
+    },
+    {
+        "question": "A community is at risk due to a lack of effective disaster management plans. Which constitutional principle directs the government to take preventive measures?",
+        "options": ["Public Health", "Social Justice", "Environmental Protection", "Economic Development"],
+        "answer": "Environmental Protection",
+        "explanation": "Environmental protection requires the government to implement disaster risk reduction and mitigation strategies to protect lives and property."
+    },
+    {
+        "question": "A rural area suffers from inadequate healthcare facilities, with a high rate of infant mortality. Which constitutional principle should guide the government to improve healthcare access?",
+        "options": ["Public Health", "Social Justice", "Economic Development", "Environmental Protection"],
+        "answer": "Public Health",
+        "explanation": "The principle of public health includes ensuring access to quality healthcare and reducing infant mortality rates."
+    },
+    {
+        "question": "Consider a scenario where a local economy is heavily reliant on mining, posing environmental and health risks to the community. Which constitutional principle would guide sustainable economic development?",
+        "options": ["Social Justice", "Environmental Protection", "Public Health", "Economic Development"],
+        "answer": "Environmental Protection",
+        "explanation": "Environmental protection focuses on sustainable development practices that balance economic growth with environmental sustainability."
+    }
+]

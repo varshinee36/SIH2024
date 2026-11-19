@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow-y: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.image-item img {
+    max-width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+#backg{
+    position: relative;
+    top:5%;
+    padding: 25%;
+    overflow: hidden;
+    
+}
+#fund-dut-btn1{
+    background-color: transparent;
+    position:absolute;
+    top:33%;
+    left:56%;
+    height: 130px;
+    width:130px;   
+    border-color: transparent;
+    cursor: pointer;
+
+}
+#fund-dut-btn2{
+    background-color:transparent;
+    position:absolute;
+    top:25%;
+    left:36.4%;
+    height: 154px;
+    width:140px;   
+    border-color: transparent;
+    cursor: pointer;
+
+}
+#fund-dut-btn3{
+    background-color:transparent;
+    position:absolute;
+    top:63.5%;
+    left:34%;
+    height: 90px;
+    width:155px;   
+    border-color: transparent;
+    cursor: pointer;
+
+}
+#fund-dut-btn4{
+    background-color:transparent;
+    position:absolute;
+    top:60%;
+    left:49.4%;
+    height: 140px;
+    width:130px;   
+    border-color: transparent;
+    cursor: pointer;
+
+}
+#text{
+    position: absolute;
+    width:120px;
+    font-size: 22px;
+    color:brown;
+}
+.item {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.lightcoral {
+    background-color: lightcoral;
+}

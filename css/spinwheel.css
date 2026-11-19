@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/back1.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+#phrase {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    width:75%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFD700; /* Gold color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInMove 2s ease-in-out forwards;
+    display: none;
+    z-index: 10000;
+}
+
+#time-up{
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFD700; /* Gold color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInMove 2s ease-in-out forwards;
+    display: none;
+    z-index: 10000;
+}
+
+@keyframes fadeInMove {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.shadowed {
+    background: rgba(242, 44, 44, 0.7);
+}
+
+/* Styles for the card container */
+#cards-container {
+    position: absolute;
+    top: 13%;
+    right: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 160px);
+    gap: 10px;
+    z-index: 1;
+    display: none;
+}
+
+.card {
+    
+    background-color: #ffffff00;
+    border: 1px solid #d1ce66;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 0;
+    /*transition: transform 1s ease-in-out;*/
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(3.5);
+}
+
+
+
+
+
+.show-card {
+    transform: scale(1.5); 
+}
+
+.flip-card {
+    transition: 1s;
+    transform: rotateY(360deg);
+}
+
+
+.feedback-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    color: white;
+    border:2px solid goldenrod;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    /*transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;*/
+}
+
+#score {
+    position: fixed;
+    top: 39px; /* Adjust this value to move it down */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 202, 202);
+    border: 2px solid rgb(245, 167, 12);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif; /* Set the font family */
+    box-shadow: 0 0 10px rgba(246,189,1);
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+#diamonds {
+    position: fixed;
+    top: 20px; /* Adjust this value if you want to align it with the score */
+    left: 80%;
+    transform: translateX(-50%);
+    background-color: #f2f2f2; /* Example background color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif; /* Set the font family */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+
+/* Style for the voice icon */
+.voice-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #555;
+    font-size: 1.5em;
+    z-index: 1000; /* Ensures the icon is above other elements */
+    position: relative;
+    display:none;
+}
+
+.voice-icon:hover {
+    color: #000;
+    display:none;
+}
+/* Style for the question box */
+.question-box {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background: rgb(234, 198, 198);
+    padding: 20px;
+    border: 2px solid #fda000;
+    border-radius: 10px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgb(246, 189, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    padding: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 180px;
+    width: 550px;
+}
+
+#answer-container {
+    position: absolute; /* Change to absolute or relative as needed */
+    top: calc(55% + 150px); /* Adjust this value based on the height of the question box */
+    left: 70%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 5px;  /* Gap between each input box */
+    
+}
+
+
+.letter-input {
+    
+    width: 20px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.letter-input:focus {
+    border-color: #FFD700; /* Golden border on focus */
+}
+.blank-input {
+    width: 20px;
+    height: 30px;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    pointer-events: all;
+}
+
+.blank-input:focus {
+    outline: none;
+    border-color: #00f;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+}
+
+#submit-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block for proper spacing */
+    font-size: 16px; /* Larger font size */
+    margin: 4px 2px; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    pointer-events: auto; /* Ensure it can be clicked */
+    
+}
+
+#submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.points-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+    animation: moveUp 2s ease-out forwards;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(-50px);
+    }
+}
+
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 10px;
+    height: 100%;
+    pointer-events: none; /* Confetti should not block other interactions */
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: rgb(94, 255, 0); /* Adjust color as needed */
+    opacity: 0.8;
+    transform: rotate(45deg);
+    animation: fall 4s infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+#leader-details-box {
+    position: absolute;
+    top: 20%; 
+    left: 88%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(248, 226, 211); 
+    border: 2px solid #bece5a;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1em;
+    z-index: 1000; 
+}
+.hidden {
+    display: none;
+}
+
+
+
+#timer-container-vertical {
+    top:44%;
+    left:94%;
+    position: absolute;
+    width: 35px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
+    background: linear-gradient(to top, rgb(237,236,153), rgb(211, 244, 61)); /* Gradient color */
+    border-radius: 15px;
+    overflow: hidden;
+    
+    
+    flex-direction: column-reverse; /* Reverse column direction to start from bottom */
+}
+
+#timer-progress-vertical {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent overlay */
+    transition: height 0.1s ease-out;
+}
+
+#timer-text { 
+    position: absolute; /* Position text absolutely */ 
+    top: 50%; /* Position text vertically centered */ 
+    left: 50%; /* Position text horizontally centered */ 
+    transform: translate(-50%, -50%); /* Center text */ 
+    font-size: 1.5em; color: rgb(0, 0, 0); 
+    font-weight: bold; 
+    z-index: 1; /* Ensure the text is above the progress bar */ 
+}
+
+#correct-answer-image {
+    position: absolute;
+    top: 28%; /* Adjust as needed */
+    left: 1%; /* Move to the left */
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+#wrong-answer-image {
+    position: absolute;
+    top: 28%; /* Adjust as needed */
+    left: 1%; /* Move to the left */
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+#google_translate_element{
+    display: none;
+}
+#correct-answer-image img{
+    width: 300px; /* Set the desired width */
+    height: 300px; /* Automatically adjust height to maintain aspect ratio */
+}
+#wrong-answer-image img {
+    width: 300px; /* Set the desired width */
+    height: 300px; /* Automatically adjust height to maintain aspect ratio */
+}
+#leader-name-box{
+    /*top:80%;
+    left:80%*/
+    /*width: 250px;
+    font-weight: 500;
+    height: 50px;*/
+    /* color: #000; */
+    /* font-family: sans-serif; */
+    /* border: 2px solid rgba(245, 167, 12, 0); */
+    /* box-shadow: 0 0 10px rgba(246, 189, 1, 0); */
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px; */
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /* font-size: 15px; */
+    /* font-weight: bold; */
+    text-align: center;
+    color: black;
+    border-radius: 8px;
+}  
+#leader-name-box {
+    position: absolute;
+    top: 1%; 
+    left: 80%;
+    width:300px;
+    height:15px;
+
+    transform: translateX(-50%);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: white;
+    /* padding: 5px 10px; */
+    border-radius: 5px;
+    display: none; 
+    text-align: center;
+}
+#leader-name-box p{
+    font-size: x-large;
+    background-color:rgb(1, 0, 0);
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    position: relative;
+    top: 10%;
+    left: 60% ;
+}
+#question-text{
+    /* background-color: #000;  */
+    font-size:x-large;
+}

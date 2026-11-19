@@ -1,0 +1,172 @@
+{
+    "pic": [
+        {
+            "text": "You are wrongfully detained without any reason. Which right protects you from such arbitrary detention?",
+            "options": [
+                "images/arbitrary_detention.png",
+                "images/right_to_equality(2).png",
+                "images/freedom_of_speech.png",
+                "images/right_to_privacy.png"
+            ],
+            "answer": "option1",
+            "explanation": "This right ensures that no one can be arbitrarily detained without just cause.",
+            "article_part": "Article 21, Part III"
+        },
+        {
+            "text": "You want to express your opinion about a social issue without fear. Which right allows you this freedom?",
+            "options": [
+                "images/right_to_equality(3).png",
+                "images/right_to_freedom.png",
+                "images/right_to_privacy.png",
+                "images/right_to_life.png"
+            ],
+            "answer": "option2",
+            "explanation": "This right allows individuals to express their opinions freely.",
+            "article_part": "Article 19, Part III"
+        },
+        {
+            "text": "You are facing discrimination at work due to your caste. Which right protects you from such discrimination?",
+            "options": [
+                "images/right_to_equality(4).png",
+                "images/right_to_education.png",
+                "images/right_to_privacy.png",
+                "images/right_to_life.png"
+            ],
+            "answer": "option1",
+            "explanation": "This right ensures protection against discrimination based on religion, race, caste, sex, or place of birth.",
+            "article_part": "Article 15, Part III"
+        },
+        {
+            "text": "You want to move freely within the country without any restrictions. Which right allows this freedom?",
+            "options": [
+                "images/right_to_freedom(2).png",
+                "images/right_to_equality.png",
+                "images/right_to_privacy.png",
+                "images/right_to_life.png"
+            ],
+            "answer": "option1",
+            "explanation": "This right ensures the freedom to move throughout the country.",
+            "article_part": "Article 19, Part III"
+        },
+        {
+            "text": "You are concerned about the environment. Which directive principle aims to protect the environment?",
+            "options": [
+                "images/environmental_protection.png",
+                "images/social_security.png",
+                "images/free_education.png",
+                "images/rural_development.png"
+            ],
+            "answer": "option1",
+            "explanation": "This directive principle aims at protecting the environment.",
+            "article_part": "Article 48A, Part IV"
+        },
+        {
+            "text": "You want to start a business but are facing barriers due to government policies. Which directive principle aims to promote economic development?",
+            "options": [
+                "images/economic_development.png",
+                "images/social_security.png",
+                "images/free_education.png",
+                "images/environmental_protection.png"
+            ],
+            "answer": "option1",
+            "explanation": "This directive principle encourages economic development.",
+            "article_part": "Article 39, Part IV"
+        },
+        {
+            "text": "Your child is working in a hazardous job. Which article protects your child from such exploitation?",
+            "options": [
+                "images/child_exploitation.png",
+                "images/right_to_equality.png",
+                "images/right_to_freedom(3).png",
+                "images/right_to_life(2).png"
+            ],
+            "answer": "option1",
+            "explanation": "This provision prohibits employment of children below 14 in hazardous jobs.",
+            "article_part": "Article 24, Part III"
+        },
+        {
+            "text": "You are denied a government job because of your caste. Which right protects you from such discrimination?",
+            "options": [
+                "images/right_to_equality.png",
+                "images/right_to_freedom.png",
+                "images/right_to_privacy(2).png",
+                "images/right_to_life.png"
+            ],
+            "answer": "option1",
+            "explanation": "Ensures equality of opportunity in public employment.",
+            "article_part": "Article 16, Part III"
+        },
+        {
+            "text": "You want to be involved in local governance. Which part of the Constitution provides for Panchayats and Municipalities?",
+            "options": [
+                "images/part_4A.png",
+                "images/part_4.png",
+                "images/part_3.png",
+                "images/part_preamble.png"
+            ],
+            "answer": "option1",
+            "explanation": "Includes provisions for local self-governance through Panchayats and Municipalities.",
+            "article_part": "Part IVA"
+        },
+        {
+            "text": "You want to peacefully protest against a government decision. Which right allows you this freedom?",
+            "options": [
+                "images/right_to_equality.png",
+                "images/right_to_freedom.png",
+                "images/right_to_privacy(4).png",
+                "images/right_to_life.png"
+            ],
+            "answer": "option2",
+            "explanation": "Allows individuals to assemble peaceably and express their views.",
+            "article_part": "Article 19, Part III"
+        },
+        {
+            "text": "You are a student and want to publish an article criticizing a government policy. Which right protects your freedom of speech?",
+            "options": [
+                "images/freedom_of_speech.png",
+                "images/right_to_equality.png",
+                "images/right_to_privacy(3).png",
+                "images/right_to_life.png"
+            ],
+            "answer": "option1",
+            "explanation": "Allows you to express your opinions through writing.",
+            "article_part": "Article 19, Part III"
+        },
+        {
+            "text": "You are planning to leave the country to study abroad. Which right protects your freedom to travel?",
+            "options": [
+                "images/right_to_freedom.png",
+                "images/right_to_privacy.png",
+                "images/right_to_equality.png",
+                "images/right_to_life.png"
+            ],
+            "answer": "option1",
+            "explanation": "Guarantees the freedom to move abroad.",
+            "article_part": "Article 19, Part III"
+        },
+        {
+            "text": "You want to start a business but are unable to get a loan due to financial constraints. Which directive principle aims to secure a living wage for all workers?",
+            "options": [
+                "images/economic_security.png",
+                "images/social_security.png",
+                "images/environmental_protection.png",
+                "images/free_education.png"
+            ],
+            "answer": "option2",
+            "explanation": "Aims at securing a living wage for workers.",
+            "article_part": "Article 43, Part IV"
+        },
+        {
+            "text": "You are concerned about child labor in your area. Which directive principle addresses the welfare of children?",
+            "options": [
+                "images/child_welfare.png",
+                "images/social_security.png",
+                "images/free_education.png",
+                "images/rural_development.png"
+            ],
+            "answer": "option3",
+            "explanation": "Aims at providing free and compulsory education to children and protection from child labor.",
+            "article_part": "Article 45, Part IV"
+        }
+    ]
+}

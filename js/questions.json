@@ -1,0 +1,334 @@
+{
+  "questions": [
+    {
+      "question": "What does 'Socialist' in the Preamble mean for India's economy?",
+      "options": [
+        "Reduce wealth gap",
+        "Government owns everything",
+        "No private businesses allowed",
+        "Focus only on industries"
+      ],
+      "correct_answer": "Reduce wealth gap",
+      "explanation": "It means India's economy should work to lessen the huge difference between the rich and the poor. Everyone should have a fair share of resources and opportunities."
+    },
+    {
+      "question": "What does 'Secular' mean in the Preamble?",
+      "options": [
+        "All religions are treated equally",
+        "No religion in public places",
+        "No belief in religion",
+        "Government stays out of religion"
+      ],
+      "correct_answer": "All religions are treated equally",
+      "explanation": "The government should not favor any one religion over another. All religions should be respected and treated the same."
+    },
+    {
+      "question": "How is 'Social, Economic, and Political Justice' achieved in practice?",
+      "options": [
+        "Welfare programs, helping those who need it, and legal rights",
+        "Focus on a stable government",
+        "Weak courts",
+        "Equal taxes for everyone"
+      ],
+      "correct_answer": "Welfare programs, helping those who need it, and legal rights",
+      "explanation": "This means everyone should have a fair chance in life. The government should have programs to help people who are poor or facing difficulties. Everyone should have equal rights and opportunities."
+    },
+    {
+      "question": "How does the Preamble show the goal of 'Equality'?",
+      "options": [
+        "Equal opportunities for everyone",
+        "Everyone is equally rich",
+        "No differences between people",
+        "No opposition to the government"
+      ],
+      "correct_answer": "Equal opportunities for everyone",
+      "explanation": "Equality means that everyone should have the same chances to succeed in life, regardless of their background, like their caste, religion, or where they come from."
+    },
+    {
+      "question": "How does the right to speak freely help democracy?",
+      "options": [
+        "People can express their views and disagree",
+        "Criticism of the government is restricted",
+        "All opinions are controlled",
+        "Only government-approved news is allowed"
+      ],
+      "correct_answer": "People can express their views and disagree",
+      "explanation": "Freedom of speech allows people to share their ideas, even if they disagree with the government. This open discussion is very important for a democracy to work properly."
+    },
+    {
+      "question": "How does the right to equality promote social justice in India?",
+      "options": [
+        "No discrimination based on caste, religion, or gender",
+        "No private property",
+        "Everyone has the same wealth",
+        "Caste system is abolished"
+      ],
+      "correct_answer": "No discrimination based on caste, religion, or gender",
+      "explanation": "This right ensures that nobody is treated unfairly because of their caste, religion, or gender. Everyone deserves to be treated with respect and dignity."
+    },
+    {
+      "question": "How does banning 'untouchability' contribute to social reform?",
+      "options": [
+        "Ends caste-based discrimination and promotes dignity",
+        "Removes economic inequalities",
+        "Removes all social differences",
+        "Punishes those who practice untouchability"
+      ],
+      "correct_answer": "Ends caste-based discrimination and promotes dignity",
+      "explanation": "Untouchability is a very harmful practice that divides society. By banning it, we can create a more just and equal society where everyone is treated with respect."
+    },
+    {
+      "question": "Why is the right to approach the court to protect our rights called the 'heart and soul of the Constitution'?",
+      "options": [
+        "Allows citizens to protect their fundamental rights",
+        "Provides a complete list of all rights",
+        "Applies only to specific citizens",
+        "Has been amended many times"
+      ],
+      "correct_answer": "Allows citizens to protect their fundamental rights",
+      "explanation": "This right is very important because it allows people to go to court if their rights are violated. It helps to ensure that everyone's rights are protected."
+    },
+    {
+      "question": "How does freedom of religion promote harmony in a diverse country like India?",
+      "options": [
+        "Everyone can practice their faith without fear",
+        "Everyone must follow the same religion",
+        "No interaction between different religions",
+        "Focus only on minority religions"
+      ],
+      "correct_answer": "Everyone can practice their faith without fear",
+      "explanation": "Freedom of religion means that people can follow their own beliefs without being afraid of being treated differently. This helps different religions to live together peacefully."
+    },
+    {
+      "question": "How does the right to education empower citizens?",
+      "options": [
+        "Provides access to knowledge and reduces inequality",
+        "Focuses solely on literacy",
+        "Makes vocational training mandatory",
+        "Eliminates private schooling"
+      ],
+      "correct_answer": "Provides access to knowledge and reduces inequality",
+      "explanation": "Education gives people the knowledge and skills they need to succeed in life. It helps to reduce poverty and create a more equal society."
+    },
+    {
+      "question": "How does the right to peacefully assemble (gather) strengthen democracy?",
+      "options": [
+        "Allows people to protest and gather peacefully",
+        "Requires government permission for protests",
+        "Limits the size of gatherings",
+        "Prioritizes government-organized events"
+      ],
+      "correct_answer": "Allows people to protest and gather peacefully",
+      "explanation": "This right allows people to come together to express their views on important issues and peacefully demand change. This is a crucial part of a healthy democracy."
+    },
+    {
+      "question": "Why is the right to protection against exploitation (being taken advantage of) important today?",
+      "options": [
+        "Prevents human trafficking and child labor",
+        "Bans economic inequalities",
+        "Ensures freedom to choose any job",
+        "Abolishes manual labor"
+      ],
+      "correct_answer": "Prevents human trafficking and child labor",
+      "explanation": "This right protects vulnerable people from being exploited or mistreated, such as in situations like forced labor or child labor."
+    },
+    {
+      "question": "How does the right to protect language and culture preserve India's diversity?",
+      "options": [
+        "Protects different languages and cultures",
+        "Promotes only one national language",
+        "Limits regional customs",
+        "Focuses only on endangered languages"
+      ],
+      "correct_answer": "Protects different languages and cultures",
+      "explanation": "This right ensures that different languages and cultures can thrive and continue to exist. It helps to maintain the rich diversity of India."
+    },
+    {
+      "question": "What is the importance of the right to work in ensuring dignity for citizens?",
+      "options": [
+        "Promotes self-reliance and independence",
+        "Guarantees equal wages for everyone",
+        "Eliminates unemployment entirely",
+        "Prioritizes government jobs"
+      ],
+      "correct_answer": "Promotes self-reliance and independence",
+      "explanation": "The right to work allows people to earn a living and support themselves. This gives them a sense of independence and dignity."
+    },
+    {
+      "question": "What is the main purpose of Directive Principles of State Policy?",
+      "options": [
+        "Guide the government in making policies",
+        "Enforce strict laws on citizens",
+        "Limit the powers of the courts",
+        "Override Fundamental Rights"
+      ],
+      "correct_answer": "Guide the government in making policies",
+      "explanation": "Directive Principles are like guidelines for the government. They help the government to create policies that aim to improve the lives of people and build a just and equitable society."
+    },
+    {
+      "question": "How do Directive Principles promote equal pay for equal work?",
+      "options": [
+        "Encourage policies to reduce wage gaps",
+        "Mandate wage control boards",
+        "Focus only on organized sectors",
+        "Abolish all forms of private employment"
+      ],
+      "correct_answer": "Encourage policies to reduce wage gaps",
+      "explanation": "These principles encourage the government to create policies that ensure men and women are paid the same amount for doing the same work."
+    },
+    {
+      "question": "How do the Directive Principles encourage the promotion of education?",
+      "options": [
+        "Aim for free and compulsory education for children",
+        "Focus only on higher education",
+        "Limit access to private schools",
+        "Set quotas for government schools"
+      ],
+      "correct_answer": "Aim for free and compulsory education for children",
+      "explanation": "Education is very important for the development of the country. These principles guide the government to make sure that all children have access to free education."
+    },
+    {
+      "question": "How do the Directive Principles aim to improve public health?",
+      "options": [
+        "Improve nutrition and public healthcare systems",
+        "Mandate private hospitals for all",
+        "Focus solely on urban health facilities",
+        "Set universal health taxes"
+      ],
+      "correct_answer": "Improve nutrition and public healthcare systems",
+      "explanation": "These principles guide the government to improve the health and well-being of its citizens by ensuring access to good food and quality healthcare for everyone."
+    },
+    {
+      "question": "Why is the Directive Principle of environmental protection significant today?",
+      "options": [
+        "Ensures sustainable use of natural resources",
+        "Bans industrial development",
+        "Focuses only on wildlife protection",
+        "Restricts urban development"
+      ],
+      "correct_answer": "Ensures sustainable use of natural resources",
+      "explanation": "This principle recognizes that we need to protect our environment for future generations. It encourages the use of natural resources in a way that doesn't harm the environment."
+    },
+    {
+      "question": "How do Directive Principles address the issue of inequality in wealth distribution?",
+      "options": [
+        "By promoting equitable distribution of resources",
+        "By imposing uniform tax rates",
+        "By nationalizing all industries",
+        "By limiting private ownership of assets"
+      ],
+      "correct_answer": "By promoting equitable distribution of resources",
+      "explanation": "These principles guide the government to work towards a society where wealth and resources are distributed more fairly among all citizens."
+    },
+    {
+      "question": "What is the role of Directive Principles in ensuring international peace?",
+      "options": [
+        "Encourage the state to maintain friendly relations with other nations",
+        "Mandate isolationist policies",
+        "Focus on economic partnerships rather than peace agreements.",
+        "Focus only on military growth"
+      ],
+      "correct_answer": "Encourage the state to maintain friendly relations with other nations",
+      "explanation": "These principles guide the government to work towards peace and cooperation with other countries, rather than conflict."
+    },
+    {
+      "question": "How do Directive Principles address rural development?",
+      "options": [
+        "By promoting village panchayats (local councils) and local self-governance",
+        "By focusing only on urban planning",
+        "By mandating subsidies for all rural businesses",
+        "By banning industries in rural areas"
+      ],
+      "correct_answer": "By promoting village panchayats and local self-governance",
+      "explanation": "These principles encourage empowering local communities in rural areas to make decisions about their own development."
+    },
+    {
+      "question": "What is the significance of promoting a uniform civil code?",
+      "options": [
+        "To ensure equal laws for all citizens irrespective of religion",
+        "To abolish personal laws completely",
+        "To focus only on marriage and inheritance laws",
+        "To mandate uniform religious practices"
+      ],
+      "correct_answer": "To ensure equal laws for all citizens irrespective of religion",
+      "explanation": "A uniform civil code would mean that all citizens, regardless of their religion, would be governed by the same set of laws in matters like marriage, divorce, and inheritance."
+    },
+    {
+      "question": "How do Directive Principles protect workers’ rights?",
+      "options": [
+        "By promoting humane working conditions and securing living wages",
+        "By banning strikes and protests",
+        "By mandating fixed job roles",
+        "By focusing only on skilled labor"
+      ],
+      "correct_answer": "By promoting humane working conditions and securing living wages",
+      "explanation": "These principles guide the government to ensure fair working conditions, reasonable wages, and protection for workers."
+    },
+    {
+      "question": "What is the significance of the fundamental duty to protect public property?",
+      "options": [
+        "It encourages responsible citizenship",
+        "It restricts individual property rights",
+        "It focuses only on urban areas",
+        "It mandates penalties for non-compliance"
+      ],
+      "correct_answer": "It encourages responsible citizenship",
+      "explanation": "This duty encourages citizens to take care of public resources and avoid damaging or destroying them. It promotes a sense of responsibility towards the community."
+    },
+    {
+      "question": "How does the duty to develop scientific thinking benefit society?",
+      "options": [
+        "It encourages rational thinking and innovation",
+        "It eliminates traditional practices",
+        "It mandates science education for all",
+        "It limits cultural activities"
+      ],
+      "correct_answer": "It encourages rational thinking and innovation",
+      "explanation": "This duty encourages people to think critically, question things, and use reason and logic to solve problems. It helps in the progress and development of society."
+    },
+    {
+      "question": "Why is the duty to uphold and protect the sovereignty(self-rule or independence) of India important?",
+      "options": [
+        "It ensures national security and integrity",
+        "It restricts foreign investments",
+        "It abolishes all forms of dissent",
+        "It limits citizens’ freedom of expression"
+      ],
+      "correct_answer": "It ensures national security and integrity",
+      "explanation": "This duty means that every citizen should work towards keeping India safe, strong, and united."
+    },
+    {
+      "question": "What is the impact of the duty to safeguard the environment?",
+      "options": [
+        "It promotes sustainable practices and conservation",
+        "It mandates strict recycling laws",
+        "It focuses only on urban cleanliness",
+        "It restricts industrial growth entirely"
+      ],
+      "correct_answer": "It promotes sustainable practices and conservation",
+      "explanation": "This duty encourages us to protect our environment for future generations by using resources wisely and minimizing pollution."
+    },
+    {
+      "question": "How does respecting national symbols encourage unity?",
+      "options": [
+        "It strengthens a sense of national identity and pride",
+        "It mandates uniform cultural practices",
+        "It focuses only on legal enforcement",
+        "It abolishes regional traditions"
+      ],
+      "correct_answer": "It strengthens a sense of national identity and pride",
+      "explanation": "Respecting symbols like the national flag and anthem helps to create a sense of belonging and unity among all citizens."
+    },
+    {
+      "question": "How does the duty to promote harmony address societal divisions?",
+      "options": [
+        "It encourages citizens to value diversity and avoid discrimination",
+        "It bans all forms of public debate",
+        "It enforces uniform social practices",
+        "It limits inter-community interactions"
+      ],
+      "correct_answer": "It encourages citizens to value diversity and avoid discrimination",
+      "explanation": "This duty emphasizes the importance of respecting and valuing the different cultures, religions, and backgrounds of all people in India."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+    "conn": [
+        {
+            "clues": ["images/elections.png", "images/voting.png", "images/governance.png"],
+            "answer": "People Rule",
+            "options": ["People Rule", "Secular State Policies", "Fundamental Duties", "Socialist Ideals"],
+            "explanation": "India is a democracy where the people choose their leaders. This means the government works for the people, reflecting the core idea of the Indian Constitution.",
+            "article_part": "Preamble"
+        },
+        {
+            "clues": ["images/equality(3).png", "images/liberty(2).png", "images/fraternity(2).png"],
+            "answer": "Equality for All",
+            "options": ["Equality for All", "Liberty", "Fraternity", "Freedom of Speech"],
+            "explanation": "The Preamble guarantees equality, making sure everyone is treated fairly.",
+            "article_part": "Preamble"
+        },
+        {
+            "clues": ["images/family.png", "images/school.png", "images/child.png"],
+            "answer": "14 years",
+            "options": ["14 years", "16 years", "18 years", "12 years"],
+            "explanation": "Article 24 stops children under 14 years old from working in dangerous jobs, ensuring they go to school.",
+            "article_part": "Article 24, Part 3"
+        },
+        {
+            "clues": ["images/life.png", "images/liberty(3).png", "images/justice.png"],
+            "answer": "Right to Life and Personal Liberty",
+            "options": ["Right to Life and Personal Liberty", "Right to Equality", "Right against Exploitation", "Right to Education"],
+            "explanation": "Article 21 guarantees every person’s right to life and personal liberty, protecting them from harm.",
+            "article_part": "Article 21, Part 3"
+        },
+        {
+            "clues": ["images/trafficking.png", "images/forced_labor.png", "images/human_rights.png"],
+            "answer": "Traffic in Human Beings and Forced Labor",
+            "options": ["Traffic in Human Beings and Forced Labor", "Child Labor", "Untouchability", "Censorship of Media"],
+            "explanation": "Article 23 bans human trafficking and forced labor to protect human rights.",
+            "article_part": "Article 23, Part 3"
+        },
+        {
+            "clues": ["images/panchayats.png", "images/villages.png", "images/governance.png"],
+            "answer": "Organization of Village Panchayats",
+            "options": ["Organization of Village Panchayats", "Promotion of International Peace", "Equal Pay for Equal Work", "Protection of the Environment"],
+            "explanation": "Article 40 talks about setting up village panchayats to help manage local issues.",
+            "article_part": "Article 40, Part 4"
+        },
+        {
+            "clues": ["images/work.png", "images/education.png", "images/public_assistance.png"],
+            "answer": "Right to Work, to Education, and to Public Assistance",
+            "options": ["Right to Work, to Education, and to Public Assistance", "Right to Property", "Right to Freedom of Religion", "Right to Vote"],
+            "explanation": "Article 41 says the government should make sure people have jobs, schooling, and help if needed.",
+            "article_part": "Article 41, Part 4"
+        },
+        {
+            "clues": ["images/elections(2).png", "images/voting.png", "images/governance(2).png"],
+            "answer": "People Rule",
+            "options": ["People Rule", "Secular State Policies", "Fundamental Duties", "Socialist Ideals"],
+            "explanation": "India is a democracy where the people choose their leaders. This means the government works for the people, reflecting the core idea of the Indian Constitution.",
+            "article_part": "Preamble"
+        },
+        {
+            "clues": ["images/equality(2).png", "images/liberty(4).png", "images/fraternity.png"],
+            "answer": "Equality for All",
+            "options": ["Equality for All", "Liberty", "Brotherhood", "Freedom of Speech"],
+            "explanation": "The Preamble guarantees equality, making sure everyone is treated fairly.",
+            "article_part": "Preamble"
+        },
+        {
+            "clues": ["images/family(2).png", "images/school(3).png", "images/child(2).png"],
+            "answer": "14 years",
+            "options": ["14 years", "16 years", "18 years", "12 years"],
+            "explanation": "Article 24 stops children under 14 years old from working in dangerous jobs, ensuring they go to school.",
+            "article_part": "Article 24, Part 3"
+        },
+        {
+            "clues": ["images/life(2).png", "images/liberty.png", "images/justice(2).png"],
+            "answer": "Right to Life and Personal Liberty",
+            "options": ["Right to Life and Personal Liberty", "Right to Equality", "Right against Exploitation", "Right to Education"],
+            "explanation": "Article 21 guarantees every person’s right to life and personal liberty, protecting them from harm.",
+            "article_part": "Article 21, Part 3"
+        },
+        {
+            "clues": ["images/trafficking(2).png", "images/forced_labor(2).png", "images/human_rights.png"],
+            "answer": "Traffic in Human Beings and Forced Labor",
+            "options": ["Traffic in Human Beings and Forced Labor", "Child Labor", "Untouchability", "Censorship of Media"],
+            "explanation": "Article 23 bans human trafficking and forced labor to protect human rights.",
+            "article_part": "Article 23, Part 3"
+        },
+        {
+            "clues": ["images/children(2).png", "images/labor.png", "images/school(4).png"],
+            "answer": "14 years",
+            "options": ["14 years", "16 years", "18 years", "12 years"],
+            "explanation": "Article 24 stops children under 14 years old from working in dangerous jobs, ensuring they go to school.",
+            "article_part": "Article 24, Part 3"
+        },
+        {
+            "clues": ["images/panchayats(2).png", "images/villages(2).png", "images/governance(3).png"],
+            "answer": "Organization of Village Panchayats",
+            "options": ["Organization of Village Panchayats", "Promotion of International Peace", "Equal Pay for Equal Work", "Protection of the Environment"],
+            "explanation": "Article 40 talks about setting up village panchayats to help manage local issues.",
+            "article_part": "Article 40, Part 4"
+        },
+        {
+            "clues": ["images/work(2).png", "images/education(2).png", "images/public_assistance.png"],
+            "answer": "Right to Work, to Education, and to Public Assistance",
+            "options": ["Right to Work, to Education, and to Public Assistance", "Right to Property", "Right to Freedom of Religion", "Right to Vote"],
+            "explanation": "Article 41 says the government should make sure people have jobs, schooling, and help if needed.",
+            "article_part": "Article 41, Part 4"
+        }
+    ]
+    }

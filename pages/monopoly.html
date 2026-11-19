@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../assets/css/monopoly.css" />
+    <link
+      rel="icon"
+      href="../assets/images/Monopoly-icon.ico.png"
+      type="image/x-icon"
+    />
+    <title>MONOPOLY</title>
+  </head>
+  <body>
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <div id="google_translate_element"></div>
+        <li>GREEN BALANCE:</li>
+        <li id="greenBalance1">Player 1: $0</li>
+        <li id="greenBalance2">Player 2: $0</li>
+        <li id="greenBalance3">Player 3: $0</li>
+        <li id="greenBalance4">Player 4: $0</li>
+        <li>RED BALANCE:</li>
+        <li id="redBalance1">Player 1: $0</li>
+        <li id="redBalance2">Player 2: $0</li>
+        <li id="redBalance3">Player 3: $0</li>
+        <li id="redBalance4">Player 4: $0</li>
+      </ul>
+    </nav>
+    <div class="samplePositionCheck">
+      <h1 id="PlayerCoin1">
+        <i class="fa-solid fa-chess-pawn"></i>
+      </h1>
+      <h1 id="PlayerCoin2">
+        <i class="fa-solid fa-chess-pawn"></i>
+      </h1>
+      <h1 id="PlayerCoin3">
+        <i class="fa-solid fa-chess-pawn"></i>
+      </h1>
+      <h1 id="PlayerCoin4">
+        <i class="fa-solid fa-chess-pawn"></i>
+      </h1>
+    </div>
+    <div id="popup-box" class="popup">
+      <h2>Popup Title</h2>
+      <div id="ques">
+        <p id="questionDisplay"></p>
+      </div>
+      <div id="btn">
+        <button id="correct"></button>
+        <button id="worng"></button>
+      </div>
+      <div class="conbtn">
+        <button id="continue"><span class="front">Continue</span></button>
+      </div>
+    </div>
+    <div class="table">
+      <div class="board">
+        <div class="center">
+          <div class="community-chest-deck">
+            <h2 class="label">Community Chest</h2>
+            <div class="deck">
+              <li>Tax Benefits</li>
+              <li>Legal Aid</li>
+              <li>Human Rights Violation</li>
+              <li>Environmental Activism</li>
+              <li>Social Reform</li>
+            </div>
+          </div>
+          <h1 class="title">MONOPOLY</h1>
+          <div class="chance-deck">
+            <h2 class="label">Chance</h2>
+            <div class="deck">
+              <li>Judicial Review</li>
+              <li>Constitutional Amendment</li>
+              <li>Public Interest Litigation</li>
+              <li>Police Brutality</li>
+              <li>Social Justice Activism</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="space corner free-parking" id="m0">
+          <div class="container">
+            <div class="name">Free</div>
+            <i class="drawing fa fa-car"></i>
+            <div class="name">Parking</div>
+          </div>
+        </div>
+
+        <div class="row horizontal-row top-row">
+          <div class="space property" id="m9">
+            <div class="container">
+              <div class="color-bar red"></div>
+              <div class="name">ARTICLE:22</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space chance" id="m8">
+            <div class="container">
+              <div class="name">Chance</div>
+              <i class="drawing fa fa-question blue"></i>
+            </div>
+          </div>
+          <div class="space property" id="m7">
+            <div class="container">
+              <div class="color-bar red"></div>
+              <div class="name">ARTICLE:21</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space property" id="m6">
+            <div class="container">
+              <div class="color-bar red"></div>
+              <div class="name">ARTICLE:48A</div>
+              <div class="price">PART-4</div>
+            </div>
+          </div>
+          <div class="space railroad" id="m5">
+            <div class="container">
+              <div class="name">Assembly Hall</div>
+              <i class="fas fa-landmark"></i>
+              <div class="price">Price $200</div>
+            </div>
+          </div>
+          <div class="space property" id="m4">
+            <div class="container">
+              <div class="color-bar yellow"></div>
+              <div class="name">ARTICLE:19</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space property" id="m3">
+            <div class="container">
+              <div class="color-bar yellow"></div>
+              <div class="name">ARTICLE:15(1)</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space utility waterworks" id="m2">
+            <div class="container">
+              <div class="name">Eductional Institute</div>
+              <i class="fas fa-building"></i>
+              <div class="price">Price $120</div>
+            </div>
+          </div>
+          <div class="space property" id="m1">
+            <div class="container">
+              <div class="color-bar yellow"></div>
+              <div class="name">ARTICLE:47</div>
+              <div class="price">PART-4</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space corner go-to-jail" id="m10">
+          <div class="container">
+            <div class="name">Go To</div>
+            <i class="drawing fa fa-gavel"></i>
+            <div class="name">Jail</div>
+          </div>
+        </div>
+
+        <div class="row vertical-row right-row">
+          <div class="space property" id="m19">
+            <div class="container">
+              <div class="color-bar green"></div>
+              <div class="name">ARTICLE:19</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space property" id="m18">
+            <div class="container">
+              <div class="color-bar green"></div>
+              <div class="name three-line-name">ARTICLE:15</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space community-chest" id="m17">
+            <div class="container">
+              <div class="name">Community Chest</div>
+              <i class="drawing fa fa-cube"></i>
+              <div class="instructions">Follow instructions on top card</div>
+            </div>
+          </div>
+          <div class="space property" id="m16">
+            <div class="container">
+              <div class="color-bar green"></div>
+              <div class="name long-name">ARTICLE:75</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space railroad" id="m15">
+            <div class="container">
+              <div class="name">Environmental Park</div>
+              <i class="fas fa-seedling"></i>
+              <div class="price">Price $200</div>
+            </div>
+          </div>
+          <div class="space chance" id="m14">
+            <div class="container">
+              <div class="name">Chance</div>
+              <i class="drawing fa fa-question"></i>
+            </div>
+          </div>
+          <div class="space property" id="m13">
+            <div class="container">
+              <div class="color-bar dark-blue"></div>
+              <div class="name">ARTICLE:25</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space fee luxury-tax" id="m12">
+            <div class="container">
+              <div class="name">Luxury Tax</div>
+              <div class="drawing fa fa-diamond"></div>
+              <div class="instructions">Pay $75.00</div>
+            </div>
+          </div>
+          <div class="space property" id="m11">
+            <div class="container">
+              <div class="color-bar dark-blue"></div>
+              <div class="name">ARTICLE:19</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space corner go" id="m20">
+          <div class="container">
+            <div class="instructions">Collect $200.00 salary as you pass</div>
+            <div class="go-word">go</div>
+          </div>
+          <div class="arrow fa fa-long-arrow-left"></div>
+        </div>
+
+        <div class="row horizontal-row bottom-row">
+          <div class="space property" id="m29">
+            <div class="container">
+              <div class="color-bar light-blue"></div>
+              <div class="name">Article:43</div>
+              <div class="price">PART-4</div>
+            </div>
+          </div>
+          <div class="space property" id="m28">
+            <div class="container">
+              <div class="color-bar light-blue"></div>
+              <div class="name">ARTICLE:40</div>
+              <div class="price">PART-4</div>
+            </div>
+          </div>
+          <div class="space chance" id="m27">
+            <div class="container">
+              <div class="name">Chance</div>
+              <i class="drawing fa fa-question"></i>
+            </div>
+          </div>
+          <div class="space property" id="m26">
+            <div class="container">
+              <div class="color-bar light-blue"></div>
+              <div class="name">ARTICLE:39</div>
+              <div class="price">PART-4</div>
+            </div>
+          </div>
+          <div class="space railroad" id="m25">
+            <div class="container">
+              <div class="name">Panchayt Office</div>
+              <i class="fa fa-building"></i>
+              <div class="price">Price $200</div>
+            </div>
+          </div>
+          <div class="space fee income-tax" id="m24">
+            <div class="container">
+              <div class="name">Income Tax</div>
+              <div class="diamond"></div>
+              <div class="instructions">Pay <br />200</div>
+            </div>
+          </div>
+          <div class="space property" id="m23">
+            <div class="container">
+              <div class="color-bar dark-purple"></div>
+              <div class="name">ARTICLE:51A</div>
+              <div class="price">PART-4A</div>
+            </div>
+          </div>
+          <div class="space community-chest" id="m22">
+            <div class="container">
+              <div class="name">Community Chest</div>
+              <i class="drawing fa fa-cube"></i>
+              <div class="instructions">Follow instructions on top card</div>
+            </div>
+          </div>
+          <div class="space property" id="m21">
+            <div class="container">
+              <div class="color-bar dark-purple"></div>
+              <div class="name three-line-name">ARTICLE:48A</div>
+              <div class="price">PART-4</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space corner jail" id="m30">
+          <div class="just">Just</div>
+          <div class="drawing">
+            <div class="container">
+              <div class="name">In</div>
+              <div class="window">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <i class="person fa fa-frown-o"></i>
+              </div>
+              <div class="name">Jail</div>
+            </div>
+          </div>
+          <div class="visiting">Visiting</div>
+        </div>
+
+        <div class="row vertical-row left-row">
+          <div class="space property" id="m39">
+            <div class="container">
+              <div class="color-bar orange"></div>
+              <div class="name">ARTICLE:48A</div>
+              <div class="price">PART-4</div>
+            </div>
+          </div>
+          <div class="space property" id="m38">
+            <div class="container">
+              <div class="color-bar orange"></div>
+              <div class="name">ARTILCE:21</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space community-chest" id="m37">
+            <div class="container">
+              <div class="name">Community Chest</div>
+              <i class="drawing fa fa-cube"></i>
+              <div class="instructions">Follow instructions on top card</div>
+            </div>
+          </div>
+          <div class="space property" id="m36">
+            <div class="container">
+              <div class="color-bar orange"></div>
+              <div class="name">ARTICLE:38</div>
+              <div class="price">PART-4</div>
+            </div>
+          </div>
+          <div class="space railroad" id="m35">
+            <div class="container">
+              <div class="name long-name">Constitutional Museum</div>
+              <i class="fa fa-university"></i>
+              <div class="price">Price $200</div>
+            </div>
+          </div>
+          <div class="space property" id="m34">
+            <div class="container">
+              <div class="color-bar purple"></div>
+              <div class="name">ARTICLE:19(2)</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space property" id="m33">
+            <div class="container">
+              <div class="color-bar purple"></div>
+              <div class="name">ARTICLE:29</div>
+              <div class="price">PART-3</div>
+            </div>
+          </div>
+          <div class="space utility electric-company" id="m32">
+            <div class="container">
+              <div class="name">Electric Company</div>
+              <i class="drawing fa fa-lightbulb-o"></i>
+              <div class="price">Price $150</div>
+            </div>
+          </div>
+          <div class="space property" id="m31">
+            <div class="container">
+              <div class="color-bar purple"></div>
+              <div class="name">ARTICLE:42</div>
+              <div class="price">PART-4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="player_control">
+      <div id="player">
+        <h1>PLAYERS</h1>
+        <br />
+        <button type="button" id="choose_player" onclick="choosePlayer()">
+          CHOOSE NO.OF. PLAYERS Click Here
+        </button>
+      </div>
+      <div id="color_choose">
+        <div id="player1">
+          Choose The Color For Player1:
+          <select id="select1">
+            <option
+              style="
+                background-color: rgb(255, 255, 255);
+                color: rgb(255, 0, 0);
+              "
+            >
+              Red
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: green">
+              Green
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: gold">
+              Yellow
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: blue">
+              Blue
+            </option>
+          </select>
+        </div>
+        <br />
+        <div id="player2">
+          Choose The Color For Player2:
+          <select id="select2">
+            <option style="background-color: rgb(255, 255, 255); color: green">
+              Green
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: red">
+              Red
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: gold">
+              Yellow
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: blue">
+              Blue
+            </option>
+          </select>
+        </div>
+        <br />
+        <div id="player3">
+          Choose The Color For Player3:
+          <select id="select3">
+            <option style="background-color: rgb(255, 255, 255); color: gold">
+              Yellow
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: red">
+              Red
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: green">
+              Green
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: blue">
+              Blue
+            </option>
+          </select>
+        </div>
+        <br />
+        <div id="player4">
+          Choose The Color For Player4:
+          <select id="select4">
+            <option style="background-color: rgb(255, 255, 255); color: blue">
+              Blue
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: red">
+              Red
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: green">
+              Green
+            </option>
+            <option style="background-color: rgb(255, 255, 255); color: gold">
+              Yellow
+            </option>
+          </select>
+        </div>
+      </div>
+      <div id="playerbuthandle">
+        <button id="player1Button">Player 1's Turn</button>
+        <button id="player2Button" onclick="startGameForPlayer(2)" disabled>
+          Player 2's Turn
+        </button>
+        <button id="player3Button" onclick="startGameForPlayer(3)" disabled>
+          Player 3's Turn
+        </button>
+        <button id="player4Button" onclick="startGameForPlayer(4)" disabled>
+          Player 4's Turn
+        </button>
+      </div>
+      <button type="button" id="play"><span class="fronts">START</span></button>
+
+      <!-- <button id="roll" onclick="switchPlayer()">roll</button>  -->
+    </div>
+    <div id="dice">
+      <img src="../assets/images/dice6.jpg" id="roll" />
+      <audio id="diceSound" src="./assets/songs/diceRoll.mp3"></audio>
+    </div>
+    <script src="../assets/js/monopolyscript.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

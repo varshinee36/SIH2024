@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection Quiz Game</title>
+    <link rel="stylesheet" href="../assets/css/Connection.css">
+</head>
+<body>
+    <div id="google_translate_element"></div>
+    <div class="container">
+        <!-- Instruction Box with Avatar -->
+        <div id="instruction-container" class="instruction-container">
+            <img id="cartoonImage" src="../assets/images/avatar.png" alt="Avatar Image" class="cartoon-image" />
+            <div class="instruction-box">
+                <h3>Instructions</h3>
+                <p>
+                    Welcome to the quiz! Please follow these instructions:
+                </p>
+                <ul>
+                    <li>Answer the questions within the given time limit.</li>
+                    <li>You can only move to the next question after answering.</li>
+                    <li>Try to score as high as possible to advance.</li>
+                </ul>
+                <button id="close-instructions" class="btn">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Game Container -->
+        <div class="game-container hide">
+            <div class="scoreboard">
+                <div id="score">Score: 0</div>
+                <div id="correct">Correct Answers: 0</div>
+                <div id="wrong">Wrong Answers: 0</div>
+            </div>
+            <div id="article-part" class="article-box"></div>
+            <div class="image-container">
+                <div class="image-slot" id="clue1"></div>
+                <div class="image-slot" id="clue2"></div>
+                <div class="image-slot" id="clue3"></div>
+            </div>
+
+            <div class="analog-timer-container">
+                <div class="analog-timer">
+                    <div id="timer-pointer" class="timer-pointer"></div>
+                </div>
+                <div id="timer-label">Time Left: 30s</div>
+            </div>
+
+            <div id="mcq-options" class="options-container"></div>
+
+            <div id="result"></div>
+
+            <button id="next-question" class="btn" style="display:none;" onclick="nextQuestion()">Next Question</button>
+
+            <div id="popup" class="popup">
+                <div id="popupMessage"></div>
+            </div>
+
+            <div id="explanation" class="explanation">
+                <p id="explanationText"></p>
+                <button class="btn" onclick="closeExplanation()">Close</button>
+            </div>
+
+            <div id="vertical-frame" style="display:none;">
+                <video id="feedback-video" controls>
+                    <source id="video-source" type="video/mp4">
+                </video>
+                <button id="skipVideoButton" class="btn" onclick="skipVideo()">Skip</button>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result-section">
+            <h1>Quiz Result</h1>
+            <!-- Avatar Image for Result -->
+            <img id="resultAvatar" src="../assets/images/avatar.png" alt="Avatar Image" class="result-avatar">
+            <div id="result-details">
+                 <!-- Result details will be dynamically added here -->
+            </div>
+            <button class="btn" id="restart-btn" style="display: none;" onclick="restartQuiz()">Restart Quiz</button>
+            <button class="btn" id="next-level-btn" style="display: none;" onclick="proceedToNextLevel()">Proceed to Round 3</button>
+        </div>
+
+            <button class="btn" id="restart-btn" style="display: none;" onclick="restartQuiz()">Restart Quiz</button>
+            <button class="btn" id="next-level-btn" style="display: none;" onclick="proceedToNextLevel()">Proceed to Round 3</button>
+        </div>
+    </div>
+
+    <script src="../assets/js/Connection.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+</body>
+</html>

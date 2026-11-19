@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over - Final Scores</title>
+    <link rel="stylesheet" href="../assets/css/endPage.css">
+</head>
+<body>
+    <div id="google_translate_element"></div>
+    <div id="endPage-container">
+        <h1>Game Over!</h1>
+        <p>Your final scores are displayed below:</p>
+
+        <div id="score-details">
+            <p>Final Score: <span id="final-score">0</span></p>
+            <p>Correct Answers: <span id="correct-answers">0</span></p>
+            <p>Wrong Answers: <span id="wrong-answers">0</span></p>
+        </div>
+
+        <div id="avatar-container">
+            <img id="endAvatar" src="../assets/images/avatar.png" alt="Game Avatar" class="end-avatar">
+        </div>
+
+        <button id="restart-button" class="btn">Go to leaderboard</button>
+        <button id="next-level-button" class="btn" style="display:none;">Proceed to Next Level</button>
+
+        <div id="endPage-popup" class="popup">
+            <div id="popupMessage">Thank you for playing!</div>
+        </div>
+    </div>
+
+    <script src="../assets/js/endPage.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+</body>
+</html>

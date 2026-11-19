@@ -1,0 +1,98 @@
+[
+    {
+        "question": "Imagine a country where everyone is treated equally, regardless of their background or religion. Which part of the Preamble does this idea relate to?",
+        "options": ["Justice", "Equality", "Liberty", "Sovereignty"],
+        "answer": "Equality",
+        "explanation": "The idea of equal treatment for all is part of equality in the Preamble, which guarantees that every citizen is treated fairly and without discrimination."
+    },
+    {
+        "question": "In a democratic country, people can think and speak freely without fear of punishment. Which part of the Preamble does this scenario describe?",
+        "options": ["Liberty", "Justice", "Equality", "Sovereignty"],
+        "answer": "Liberty",
+        "explanation": "This scenario is about liberty in the Preamble, which includes the freedom to express thoughts and opinions without fear."
+    },
+    {
+        "question": "Imagine a situation where everyone has the right to live their life freely and make their own decisions without facing discrimination. Which right does this scenario describe?",
+        "options": ["Right to Life", "Right to Privacy", "Right to Freedom", "Right to Education"],
+        "answer": "Right to Life",
+        "explanation": "This scenario describes the Right to Life which ensures that everyone can live their life with dignity and make choices without discrimination."
+    },
+    {
+        "question": "In a country where everyone is treated fairly, regardless of their economic status, which right would that reflect?",
+        "options": ["Right to Equality", "Right to Freedom", "Right to Privacy", "Right to Religion"],
+        "answer": "Right to Equality",
+        "explanation": "This scenario is about Right to Equality, which ensures that everyone is treated fairly and without discrimination based on their economic status or other attributes."
+    },
+    {
+        "question": "If workers are treated with respect and are paid fairly for their work, which right is being protected?",
+        "options": ["Right to Equality", "Right against Exploitation", "Right to Work", "Right to Religion"],
+        "answer": "Right against Exploitation",
+        "explanation": "This scenario is related to Right against Exploitation, which ensures that workers are treated with respect and are paid fairly."
+    },
+    {
+        "question": "If a person can freely choose and practice their religion without interference, which right is being protected?",
+        "options": ["Right to Religion", "Right to Freedom", "Right to Equality", "Right to Privacy"],
+        "answer": "Right to Religion",
+        "explanation": "This scenario pertains to Right to Religion, which allows individuals to follow any religion without interference."
+    },
+    {
+        "question": "In a situation where a person can express their opinions and ideas openly without fear of punishment, which right does this represent?",
+        "options": ["Right to Speech", "Right to Freedom", "Right to Privacy", "Right to Religion"],
+        "answer": "Right to Freedom",
+        "explanation": "This scenario describes the Right to Freedom, which allows people to express their views openly."
+    },
+    {
+        "question": "When a person can move and live anywhere in the country without restrictions, which right is being described?",
+        "options": ["Right to Residence", "Right to Freedom", "Right to Privacy", "Right to Religion"],
+        "answer": "Right to Freedom",
+        "explanation": "This scenario reflects the Right to Freedom, which allows individuals to choose where they want to live."
+    },
+    {
+        "question": "If a person is not discriminated against at work or in public places, which right does this scenario protect?",
+        "options": ["Right to Equality", "Right against Exploitation", "Right to Privacy", "Right to Religion"],
+        "answer": "Right to Equality",
+        "explanation": "This scenario is about Right to Equality, which ensures that no one faces discrimination in any form."
+    },
+    {
+        "question": "In a society where everyone can express their thoughts and opinions, which Directive Principle would support this?",
+        "options": ["Promotion of Justice", "Securing of Economic Equality", "Protection of the Environment", "Uniform Civil Code"],
+        "answer": "Promotion of Justice",
+        "explanation": "This scenario aligns with the Directive Principle of Promotion of Justice (ensuring fair treatment and freedom of expression)."
+    },
+    {
+        "question": "If the government is working towards ensuring fair wages and good working conditions for everyone, which Directive Principle does this reflect?",
+        "options": ["Promotion of Justice", "Securing of Economic Equality", "Protection of the Environment", "Uniform Civil Code"],
+        "answer": "Securing of Economic Equality",
+        "explanation": "This scenario is about the Directive Principle of Securing of Economic Equality (fair wages and working conditions)."
+    },
+    {
+        "question": "When the government ensures that every child receives free and compulsory education, which Directive Principle is being followed?",
+        "options": ["Promotion of Justice", "Securing of Economic Equality", "Free and Compulsory Education for Children", "Protection of the Environment"],
+        "answer": "Free and Compulsory Education for Children",
+        "explanation": "This scenario reflects the Directive Principle of Free and Compulsory Education for Children (mandatory education for all children)."
+    },
+    {
+        "question": "If the government is protecting and improving the environment, which Directive Principle is this related to?",
+        "options": ["Protection of the Environment", "Securing of Economic Equality", "Free and Compulsory Education for Children", "Promotion of Justice"],
+        "answer": "Protection of the Environment",
+        "explanation": "This is the Directive Principle of Protection of the Environment (emphasizing the importance of maintaining a healthy environment)."
+    },
+    {
+        "question": "If a person is not subjected to forced labor and trafficking, which Directive Principle would this scenario protect?",
+        "options": ["Protection of Children", "Prohibition of Employment of Children", "Free and Compulsory Education for Children", "Protection against Exploitation"],
+        "answer": "Protection against Exploitation",
+        "explanation": "This scenario is about Protection against Exploitation (safeguarding individuals from forced labor and trafficking)."
+    },
+    {
+        "question": "When the government ensures that no child is employed in hazardous jobs, which Directive Principle is being implemented?",
+        "options": ["Prohibition of Employment of Children", "Protection of Children", "Protection against Exploitation", "Free and Compulsory Education for Children"],
+        "answer": "Prohibition of Employment of Children",
+        "explanation": "This reflects the Directive Principle of Prohibition of Employment of Children (protecting children from hazardous jobs)."
+    },
+    {
+        "question": "If children are provided with adequate nutrition and opportunities for development, which Directive Principle does this scenario align with?",
+        "options": ["Prohibition of Employment of Children", "Protection of Children", "Free and Compulsory Education for Children", "Protection against Exploitation"],
+        "answer": "Protection of Children",
+        "explanation": "This scenario is about the Directive Principle of Protection of Children (ensuring their well-being and development opportunities)."
+    }
+]

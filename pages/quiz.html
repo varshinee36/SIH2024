@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/quiz.css" />
+    <title>Constitution Games Hub</title>
+    <style>
+        body {
+          background-image: url('../assets/images/quizbg2.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="google_translate_element"></div>
+    <div class="container">
+        <div class="start-screen">
+            <h1 class="heading">Indian Constitution</h1>
+            <button class="btn start">Start Quiz</button>
+        </div>
+            <!-- Instruction Box with Avatar -->
+        <div id="instruction-container" class="instruction-container">
+            <img id="cartoonImage" src="../assets/images/avatar.png" alt="Avatar Image" class="cartoon-image" />
+            <div class="instruction-box">
+                <h3>Instructions</h3>
+                <p>
+                    Welcome to the quiz! Please follow these instructions:
+                </p>
+                <ul>
+                    <li>Answer the questions within the given time limit.</li>
+                    <li>You can only move to the next question after answering.</li>
+                    <li>Try to score as high as possible to advance.</li>
+                </ul>
+                <button id="close-instructions" class="btn">Close</button>
+            </div>
+        </div>
+        <div class="quiz hide">
+            <div class="timer">
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text"></span>
+                </div>
+            </div>
+            <div class="question-wrapper">
+                <div class="number">
+                    Question <span class="current">1</span>
+                    <span class="total">/10</span>
+                </div>
+                <div class="question">This is a question?</div>
+            </div>
+            <div class="answer-wrapper">
+                <!-- Answers will be inserted here dynamically -->
+            </div>
+            <!--<button class="btn submit" disabled>Submit</button>-->
+            <button class="btn next hide">Next</button>
+        </div>
+        <div class="end-screen hide">
+            <h1 class="heading">Quiz App</h1>
+            <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+            
+            <!-- Avatar Image -->
+            <img id="resultAvatar" src="../assets/images/avatar.png" alt="Avatar Image" class="result-avatar">
+            
+            <div class="score">
+                <span class="score-text">Your score:</span>
+                <div>
+                    <span class="final-score">0</span>
+                    <br>
+                    <span class="total-score">/10</span>
+                </div>
+            </div>
+            
+            <button class="btn NextRound" onclick="goToNextRound()">Go to Round 2</button>
+            <button class="btn Restart">Restart</button>    
+        </div>        
+        <!-- Explanation Section -->
+        <div class="explanation hide">
+            <h3>Explanation</h3>
+            <p id="explanation-text"></p>
+            <button class="btn close-explanation">Close</button>
+        </div>
+        
+        <div class="scoreboard">
+            <div class="correct-answers">
+              <span>0</span> Correct Answers
+            </div>
+            <div class="wrong-answers">
+              <span>0</span> Wrong Answers
+            </div>
+            <div class="current-score">
+              <span>0</span> Score
+            </div>
+        </div>
+
+        <div id="confetti-effect" class="hidden">
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+          </div>
+          
+    <audio id="applause-sound" src="../assets/songs/applause.mp3" preload="auto"></audio>
+    <audio id="correct-sound" src="../assets/songs/acorrect.wav"></audio>
+    <audio id="wrong-sound" src="../assets/songs/awrong.wav"></audio>
+    <script src="../assets/js/quiz.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+</body>
+</html>

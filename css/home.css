@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url('../images/bg.jpeg.jpg') ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+#google_translate_element{
+    display: none;
+}
+.home-container {
+    text-align: center;
+    
+    padding: 40px;
+    border-radius: 10px;
+   
+}
+
+h1 {
+    font-size: 48px;  /* Increased size */
+    margin-bottom: 30px;
+    color: #eeae0b;
+    font-family: 'Arial Black', sans-serif;  /* Bold font */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 20px;  /* Increased size */
+    margin-bottom: 70px;
+    color: #e7960a;
+    font-family: 'Georgia', serif;  /* Elegant font */
+    font-style: italic;
+}
+
+.game-logo {
+    max-width: 50%;  /* Further reduced size */
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: -50px;  /* Move image up */
+}
+
+.button-container {
+    margin-top: 0px;  /* Reduced margin to move button up */
+}
+
+.start-game-button {
+    width: 900px; /* Increased button size */
+    margin-top: -220px; /* Move button up */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.start-game-button:hover {
+    transform: scale(1.1);
+}

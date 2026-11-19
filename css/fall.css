@@ -1,0 +1,274 @@
+body {
+    /* background: #222; */
+    background: url('../images/ns2.png');
+    color: white;
+    background-size:cover;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#google_translate_element{
+    display: none;
+  }
+
+#game-container {
+    background: #333333b9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+}
+
+/* Scoreboard */
+#scoreboard {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#scoreboard p {
+    margin: 5px 0;
+}
+
+#score-value, #correct-answers, #wrong-answers {
+    font-weight: bold;
+    color: #88ce02;
+}
+
+/* Container for the bow and arrow */
+#bow-container {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    width: 200px; /* Fixed width for bow and arrow container */
+}
+
+#bow {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* Question Container */
+#question-container {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    color: white;
+    position: relative;
+    top: -10px; /* Adjusted to position below the scorecard */
+}
+
+/* Options Container */
+#options-container {
+    position: absolute;
+    right: 10%;
+    width: 70%;
+    height: 80%; /* Ensure it is tall enough for falling options */
+    overflow: hidden;
+    top: 100px; /* Adjusted to position below the question container */
+}
+
+.option {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: white;
+    position: absolute;
+    width: 100px; /* Smaller width */
+    height: 30px;  /* Smaller height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fall 8s linear infinite; /* Slowed down fall */
+    font-size: 14px;
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+#nextButton, #resultButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    visibility: hidden; /* Initially hidden */
+    position: absolute;
+    left: 50%;
+    bottom: 20px; /* Position at the bottom center */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#nextButton.visible, #resultButton.visible {
+    visibility: visible;
+}
+
+/* Progress bar timer styles */
+#timer-container {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0;
+    background-color: #88ce02;
+    transition: width 0.1s linear;
+}
+
+/* Explanation Container */
+.explanation {
+    display: none;
+    position: fixed;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #3f4868;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 14px;
+    width: 200px;
+    height: 100px;
+}
+
+.explanation p {
+    margin: 0;
+    color: #000;
+}
+
+.explanation button {
+    display: block;
+    margin: 15px auto;
+    padding: 5px 10px;
+    background-color: #3ec826;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.explanation button:hover {
+    background-color: #1cb614;
+}
+
+/* Falling Animation */
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0.5;
+    }
+}
+
+/* Delaying the fall for each option */
+.option:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.option:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.option:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.option:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.arrow {
+    position: relative;
+    z-index: 10; /* Ensure arrows stay on top */
+}
+
+#avatar-container {
+    position: absolute;
+    bottom: -150px; /* Start off-screen */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0; /* Ensure it's hidden initially */
+    transition: opacity 0.5s ease;
+}
+
+.slide-in {
+    animation: slide-in 1.5s ease-in-out forwards; /* Slide in animation with smooth movement */
+}
+
+.slide-out {
+    animation: slide-out 1.5s ease-in-out forwards; /* Slide out animation */
+}
+
+@keyframes slide-in {
+    0% {
+        bottom: -150px; /* Start off-screen from the bottom */
+        opacity: 0;
+        transform: translateX(-50%) scale(0.8) rotate(0deg); /* Start small for effect */
+    }
+    50% {
+        bottom: 50%; /* Move to the middle of the screen */
+        opacity: 1;
+        transform: translateX(-50%) scale(1) rotate(20deg); /* Fully visible and tilted */
+    }
+    100% {
+        bottom: 50%; /* Remain in the middle */
+        opacity: 1;
+        transform: translateX(-50%) scale(1) rotate(0deg); /* Straighten slightly */
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        bottom: 50%; /* Start at the middle */
+        opacity: 1;
+        transform: translateX(-50%) scale(1) rotate(0deg); /* Straight */
+    }
+    100% {
+        bottom: -150px; /* Exit off-screen */
+        opacity: 0;
+        transform: translateX(-50%) scale(0.8) rotate(-20deg); /* Shrink and tilt back */
+    }
+}

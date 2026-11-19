@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PREAMBLE - Spin the Wheel Game</title>
+    <link rel="stylesheet" href="../assets/css/spinwheel.css" />
+    <link rel="stylesheet" href="../assets/css/wheel.css" />
+    <!-- <script src="preamblescript.js" defer></script>
+    <script src="segment-script.js" defer></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Game Wheel  -->
+    <div id="google_translate_element"></div>
+    <div id="segment-container" style="display: none">
+      <div id="wheel-stem-container">
+        <div class="wheel-wrapper" onclick="spinWheel()">
+          <img
+            src="../assets/images/eight-segment-wheel.png"
+            alt="Eight Segment Wheel"
+            id="eight-segment-wheel"
+            class="resized-wheel"
+          />
+        </div>
+        <img src="../assets/images/stem.png" alt="Stem Image" id="stem-image" />
+      </div>
+      <img src="../assets/images/arrow2.png" alt="Arrow" id="arrow-image" />
+    </div>
+
+    <!-- Question Container (to hold question and blanks) -->
+    <div id="questions-container" style="display: none"></div>
+
+    <div style="width: 50%; height: 100vh; position: absolute; right: 0">
+      <div id="phrase">HAPPY SPINNING!</div>
+      <!--<div id="timer" class="hidden">02:00</div>-->
+      <div id="time-up" class="hidden">FINE GAME!</div>
+      <div id="score" class="hidden">Score: 0</div>
+      <div id="cards-container">
+        <div class="card" data-color="gold"><img src="../assets/images/card1.png" alt="Card 1"></div>
+            <div class="card" data-color="darkblue"><img src="../assets/images/card2.png" alt="Card 2"></div>
+            <div class="card" data-color="blue"><img src="../assets/images/card3.png" alt="Card 3"></div>
+            <div class="card" data-color="lightgreen"><img src="../assets/images/card4.jpg" alt="Card 4"></div>
+            <div class="card" data-color="darkgreen"><img src="../assets/images/card5.png" alt="Card 5"></div>
+            <div class="card" data-color="red"><img src="../assets/images/card6.png" alt="Card 6"></div>
+            <div class="card" data-color="yellow"><img src="../assets/images/card7.png" alt="Card 7"></div>
+            <div class="card" data-color="orange"><img src="../assets/images/card8.jpg" alt="Card 8"></div>
+      </div>
+    </div>
+
+    <div id="result-box" style="display: none">
+      <p id="result-text"></p>
+    </div>
+    <!-- Final Score Box -->
+    <div id="final-score-box" style="display: none">
+      <p id="final-score-text"></p>
+    </div>
+    <div id="correct-answer-box" style="display: none">
+      <p id="correct-answer-text"></p>
+    </div>
+    <!-- Leader Details Box -->
+    <!-- Leader Details Box -->
+    <div id="leader-details-box" class="hidden"></div>
+
+    <div id="timer-container-vertical" style="display: none">
+      <div id="timer-progress-vertical"></div>
+      <span id="timer-text">20</span>
+      <!-- Initial countdown text -->
+    </div>
+    <!-- Correct Answer Image Container -->
+    <div id="correct-answer-image" style="display: none">
+      <img src="../assets/images/correctgirl.png" alt="Correct Answer" />
+    </div>
+
+    <!-- Wrong Answer Image Container -->
+    <div id="wrong-answer-image" style="display: none">
+      <img src="../assets/images/wronggirl.png" alt="Wrong Answer" />
+    </div>
+
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <div id="leader-name-box" style="display: none">
+      
+        <p id="name-text"></p>
+      
+    </div>
+
+  <!-- Add more cards as needed -->
+  
+  
+  
+    <!-- <script src="../assets/js/segment-script.js" defer></script> -->
+    <script src="../assets/js/preamblescript.js" defer></script>
+
+  </body>
+
+</html>

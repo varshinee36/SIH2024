@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Overlay Points and Animate on Image</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: url('bg.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color:aqua; */
+            background: url('../assets/images/back2.png');
+        }
+        .map-container {
+            position: relative;
+            width: 1500px; /* Adjust as needed */
+            height: 500px; /* Adjust as needed */
+        }
+        .map-image {
+            position: absolute;
+            left: 0%;
+            top:-20%;
+            width: 1500px;
+            height: 700px;
+            z-index: -1;
+        }
+        .point {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .point1 {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+         
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .point:hover {
+            background-color: blue;
+        }
+        .start-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+          /*  padding: 10px 20px;*/
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .start-button:hover {
+            background-color: #218838;
+        }
+        #btn1{
+            position:relative;
+            color:transparent;
+            background-color:transparent;
+            z-index:10;
+            top:62%;
+            left:54%;
+            height:150px;
+            width: 150px;
+            border-radius: 100%;
+            border-color: transparent;
+        }
+        #btn2{
+            position:relative;
+            color:transparent;
+            background-color:transparent;
+            z-index:10;
+            top:9%;
+            left:5%;
+            height:150px;
+            width: 150px;
+            border-radius: 100%;
+            
+            border-color: transparent;
+        }
+        #btn3{
+            position:relative;
+            color:transparent;
+            background-color:transparent;
+            z-index:10;
+            top:10%;
+            left:25%;
+            height:150px;
+            width: 150px;
+            border-radius: 100%;
+            border-color: transparent;
+        }
+        #btn4{
+            position:relative;
+            color:transparent;
+            background-color:transparent;
+            z-index:10;
+            top:-16%;
+            left:26%;
+            height:110px;
+            width: 120px;
+            border-radius: 100%;
+            border-color: transparent;
+        }
+        #btn5{
+            position:relative;
+            color:transparent;
+            background-color:transparent;
+            z-index:10;
+            top:-24%;
+            left:33%;
+            height:100px;
+            width: 120px;
+            border-radius: 100%;
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="back">
+    <div class="map-container">
+        <img src="../assets/images/homeimg0.jpg" alt="Map" class="map-image">
+        <div id="movingPoint" class="point" style="top: 500px; left: 750px;" title="Moving Point"></div>
+        <a href="../pages/images.html"><button id="btn1" >open</button></a>
+        <a href="../pages/homespin.html"><button id="btn2">open</button></a>
+        <a href="../pages/gameOverview.html"><button id="btn3">open</button></a>
+        <a href="../pages/monopoly.html"><button id="btn4">open</button></a>
+        <a href="../pages/snake.html"><button id="btn5" >open</button></a>
+        <div class="point1" style="top: 205px; left: 600px;" title="Point 3"></div>
+        <div class="point1" style="top: 100px; left: 950px;" title="Point 4"></div>
+        <div class="point1" style="top: -15px; left: 1070px;" title="Point 5"></div>
+       
+    </div>
+    <button class="start-button" onclick="startMovement()">Next Point</button>
+    </div>
+    <script>
+        const points = [
+            { x: 750, y: 500 },
+            { x: 420, y: 280 },
+            { x: 600, y: 205 },
+            { x: 950, y: 100 },
+            {x:1070,y: -15}// Add more points as needed
+        ];
+
+        let currentIndex = 0;
+        let isMoving = false;
+
+        function movePoint(startX, startY, endX, endY, duration, callback) {
+            var point = document.getElementById('movingPoint');
+            var startTime = null;
+
+            function animate(currentTime) {
+                if (!startTime) startTime = currentTime;
+                var timeElapsed = currentTime - startTime;
+                var progress = timeElapsed / duration;
+
+                // Apply an easing function for a smoother, bouncy effect
+                var easeProgress = easeInOutQuad(progress);
+
+                var currentX = startX + (endX - startX) * easeProgress;
+                var currentY = startY + (endY - startY) * easeProgress;
+
+                point.style.left = currentX + 'px';
+                point.style.top = currentY + 'px';
+
+                if (progress < 1) {
+                    requestAnimationFrame(animate);
+                } else {
+                    if (callback) callback();
+                }
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        // Easing function for a smooth, bouncy effect
+        function easeInOutQuad(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        }
+
+        function startMovement() {
+            if (isMoving || currentIndex >= points.length - 1) return;
+            isMoving = true;
+
+            const startX = points[currentIndex].x;
+            const startY = points[currentIndex].y;
+            const endX = points[currentIndex + 1].x;
+            const endY = points[currentIndex + 1].y;
+
+            movePoint(startX, startY, endX, endY, 2000, () => {
+                currentIndex++;
+                isMoving = false;
+            });
+        }
+    </script>
+</body>
+</html>

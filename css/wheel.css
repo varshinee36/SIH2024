@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url('../images/back1.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+#google_translate_element{
+    display: none;
+}
+#segment-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.wheel-wrapper {
+    position: relative;
+    cursor: pointer; /* Make the wheel clickable */
+    left: 300px; /* Adjusted value */
+}
+
+.resized-wheel {
+    width: 300px;
+    height: auto;
+    transition: transform 4s ease-out;
+    margin-top: 200px;
+    left: 250px;
+}
+
+#stem-image {
+    width: 900px;
+    height: auto;
+    margin-top: -250px;
+    left: 200px;
+}
+
+#arrow-image {
+    position: absolute;
+    top: 28%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    transform: rotate(300deg);
+    width: 350px;
+    z-index: 2;
+}
+
+
+#result-box {
+    width: 250px;
+    height: 60px;
+    background-color: rgb(255, 202, 202);
+    border: 2px solid rgb(245, 167, 12);
+    box-shadow: 0 0 10px rgba(246,189,1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 87%; /* Adjust as needed to position below the wheel and stem */
+    left: 33%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    border-radius: 8px;
+}
+
+
+#final-score-box {
+    width: 250px;
+    height: 70px;
+    background-color: rgb(255, 202, 202);
+    border: 2px solid rgb(245, 167, 12);
+    box-shadow: 0 0 10px rgba(246,189,1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 40%; /* Adjust as needed to position below the wheel and stem */
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    border-radius: 8px;
+}
+
+#correct-answer-box {
+    width: 250px;
+    height: 70px;
+    background-color: rgba(255, 202, 202, 0);
+    border: 2px solid rgba(245, 167, 12, 0);
+    box-shadow: 0 0 10px rgba(246, 189, 1, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 82%; /* Adjust as needed to position below the wheel and stem */
+    left: 72%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(22, 220, 75);
+    border-radius: 8px;
+}

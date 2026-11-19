@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/fall.css">
+</head>
+<body>
+    <div id="google_translate_element"></div>
+    <div id="game-container">
+        <div id="scoreboard">
+            <p>Score: <span id="score-value">0</span></p>
+            <p>Correct Answers: <span id="correct-answers">0</span></p>
+            <p>Wrong Answers: <span id="wrong-answers">0</span></p>
+        </div>
+        <div id="timer-container">
+            <div id="progressBar"></div>
+        </div>
+        <div id="question-container">Loading question...</div>
+        <div id="avatar-container">
+            <img id="correct-avatar" src="../assets/images/correct-avatar.png" alt="Correct Avatar" style="display: none;" />
+            <img id="wrong-avatar" src="../assets/images/wrong-avatar.png" alt="Wrong Avatar" style="display: none;" />
+        </div>        
+        <div id="main-game-area">
+            <svg id="game" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" overflow="visible">
+                <linearGradient id="ArcGradient">
+                    <stop offset="0" stop-color="#fff" stop-opacity=".2"/>
+                    <stop offset="50%" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+                <path id="arc" fill="none" stroke="url(#ArcGradient)" stroke-width="4" d="M100,250c250-400,550-400,800,0" pointer-events="none"/>
+                <defs>
+                    <g id="arrow">
+                        <line x2="60" fill="none" stroke="#888" stroke-width="2"/>
+                        <polygon fill="#888" points="64 0 58 2 56 0 58 -2"/>
+                        <polygon fill="#88ce02" points="2 -3 -4 -3 -1 0 -4 3 2 3 5 0"/>
+                    </g>
+                </defs>
+                <g id="bow" fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke" pointer-events="none">
+                    <polyline fill="none" stroke="#ddd" stroke-linecap="round" points="88,200 88,250 88,300"/>
+                    <path fill="none" stroke="#88ce02" stroke-width="3" stroke-linecap="round" d="M88,300 c0-10.1,12-25.1,12-50s-12-39.9-12-50"/>
+                </g>
+                <g class="arrow-angle"><use x="100" y="250" xlink:href="#arrow"/></g>
+                <clipPath id="mask">
+                    <polygon opacity=".5" points="0,0 1500,0 1500,200 970,290 950,240 925,220 875,280 890,295 920,310 0,350" pointer-events="none"/>
+                </clipPath>
+                <g class="arrows" clip-path="url(#mask)" pointer-events="none">
+                </g>
+            </svg>
+
+            <div id="options-container"></div> <!-- Moved here for the layout change -->
+        </div>
+
+        <div id="explanation-container" class="explanation">
+            <p id="explanation-text"></p>
+            <button id="close-explanation-button">Close</button>
+        </div>
+
+        <button id="nextButton" class="visible">Next Question</button>
+        <button id="resultButton" style="display:none;">View Results</button>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src='//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js'></script>
+    <script src="../assets/js/fall.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+</body>
+</html>
